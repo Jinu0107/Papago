@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onKeyPressed="#key" prefHeight="557.0" prefWidth="1091.0" style="-fx-background-color: rgb(255,255,255);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MainController">
+   <children>
+      <TextField fx:id="field" alignment="TOP_LEFT" layoutY="77.0" prefHeight="416.0" prefWidth="514.0" promptText="번역할 내용을 입력하세요." style="-fx-border-color: rgb(0,77,248); -fx-border-width: 2;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="77.0">
+         <font>
+            <Font name="Arial" size="32.0" />
+         </font>
+      </TextField>
+      <Label fx:id="la" alignment="TOP_LEFT" layoutX="555.0" layoutY="77.0" lineSpacing="1.0" prefHeight="416.0" prefWidth="550.0" style="-fx-background-color: rgb(255,255,255); -fx-border-color: rgb(0,77,248); -fx-border-width: 2;" wrapText="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="77.0">
+         <font>
+            <Font name="Arial" size="32.0" />
+         </font>
+      </Label>
+      <Button layoutX="541.0" layoutY="502.0" mnemonicParsing="false" onAction="#ko" prefHeight="47.0" prefWidth="110.0" style="-fx-background-color: rgb(0,77,248); -fx-background-radius: 100;" text="KO" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font></Button>
+      <Button layoutX="651.0" layoutY="502.0" mnemonicParsing="false" onAction="#en" prefHeight="47.0" prefWidth="110.0" style="-fx-background-color: rgb(0,77,248); -fx-background-radius: 100;" text="EN" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font></Button>
+      <Button layoutX="761.0" layoutY="502.0" mnemonicParsing="false" onAction="#zhCN" prefHeight="47.0" prefWidth="110.0" style="-fx-background-color: rgb(0,77,248); -fx-background-radius: 100;" text="ZH-CN" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font></Button>
+      <Button layoutX="871.0" layoutY="502.0" mnemonicParsing="false" onAction="#zhTW" prefHeight="47.0" prefWidth="110.0" style="-fx-background-color: rgb(0,77,248); -fx-background-radius: 100;" text="ZH-TW" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font></Button>
+      <Button layoutX="981.0" layoutY="502.0" mnemonicParsing="false" onAction="#ja" prefHeight="47.0" prefWidth="110.0" style="-fx-background-color: rgb(0,77,248); -fx-background-radius: 100;" text="JA" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font></Button>
+      <Button layoutX="14.0" layoutY="502.0" mnemonicParsing="false" onAction="#start" prefHeight="47.0" prefWidth="134.0" style="-fx-background-color: rgb(0,77,248); -fx-background-radius: 100;" text="START" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Button>
+      <Label fx:id="gam" alignment="CENTER" contentDisplay="CENTER" layoutX="348.0" layoutY="14.0" prefHeight="53.0" prefWidth="166.0" style="-fx-background-color: rgb(0,77,248); -fx-background-radius: 100;" text="언어감지" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="h" alignment="CENTER" contentDisplay="CENTER" layoutX="541.0" layoutY="14.0" prefHeight="53.0" prefWidth="166.0" style="-fx-background-color: rgb(0,77,248); -fx-background-radius: 100;" text="한국어" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="1065.0" layoutY="3.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: rgb(255,0,0);" text="X" textFill="WHITE" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
